@@ -17,13 +17,13 @@
 #define DS3231_I2C_ADDR             0x68
 
 // timekeeping registers
-#define DS3231_TIME_CAL_ADDR        0x00
-#define DS3231_ALARM1_ADDR          0x07
-#define DS3231_ALARM2_ADDR          0x0B
-#define DS3231_CONTROL_ADDR         0x0E
-#define DS3231_STATUS_ADDR          0x0F
-#define DS3231_AGING_OFFSET_ADDR    0x10
-#define DS3231_TEMPERATURE_ADDR     0x11
+#define DS3231_TIME_CAL_ADDR        (uint8_t)0x00
+#define DS3231_ALARM1_ADDR          (uint8_t)0x07
+#define DS3231_ALARM2_ADDR          (uint8_t)0x0B
+#define DS3231_CONTROL_ADDR         (uint8_t)0x0E
+#define DS3231_STATUS_ADDR          (uint8_t)0x0F
+#define DS3231_AGING_OFFSET_ADDR    (uint8_t)0x10
+#define DS3231_TEMPERATURE_ADDR     (uint8_t)0x11
 
 // control register bits
 #define DS3231_CONTROL_A1IE     0x1		/* Alarm 2 Interrupt Enable */
